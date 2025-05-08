@@ -21,6 +21,8 @@ namespace Practico_de_Series_de_Mamani_Chura
             dato1.Visible = false;Resultado.Visible = false;
            dato2.Visible = false; dato3.Visible = false; dato4.Visible = false; dato5.Visible = false; dato6.Visible = false; dato7.Visible = false;
             lbtitulo.Text = "";
+            lbcampo01.Visible = false;lbcampo02.Visible = false;lbcampo03.Visible = false;
+            lbcampo04.Visible = false;lbcampo05.Visible = false;lbcampo06.Visible = false;lbcampo07.Visible = false;button2.Visible = false;button3.Visible = false;
 
         }
         void limpiar()
@@ -282,106 +284,158 @@ namespace Practico_de_Series_de_Mamani_Chura
 
         private void ejercicio1ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            lbcampo01.Text = "Suma";
+            lbcampo01.Text = "Suma:";lbcampo01.Visible = true;lbcampo02.Visible = true;lbcampo02.Text = "n terminos:";
             lbtitulo.Text = "Practico #01 Ejercicio 01";
             NumeroEjercicio = 1;
             NumeroPractico = 1;
-            dato1.Visible = true;dato2.Visible = true;Resultado.Visible = true;
+            dato1.Visible = true;dato2.Visible = true;Resultado.Visible = true;button2.Visible = true;button3.Visible = true;
             Resultado.Text = tSuma(int.Parse(dato1.Text), int.Parse(dato2.Text));
         }
 
         private void ejercicio2ToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            lbcampo01.Text = "Resta:"; lbcampo01.Visible = true; lbcampo02.Visible = true; lbcampo02.Text = "n terminos:";
             lbtitulo.Text = "Practico #01 Ejercicio 02";
             NumeroEjercicio = 2;
             NumeroPractico = 1;
-            dato3.Visible = false; dato4.Visible = false; dato5.Visible = false; dato6.Visible = false; dato7.Visible = false;
+            dato1.Visible = true; dato2.Visible = true; Resultado.Visible = true; button2.Visible = true; button3.Visible = true;
             Resultado.Text = Tresta(int.Parse(dato1.Text), int.Parse(dato2.Text));
         }
 
         private void ejercicio3ToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            lbcampo01.Text = "Multiplicar:"; lbcampo01.Visible = true; lbcampo02.Visible = true; lbcampo02.Text = "n terminos:";
             lbtitulo.Text = "Practico #01 Ejercicio 03";
             NumeroEjercicio = 3;
             NumeroPractico = 1;
-            dato3.Visible = false; dato4.Visible = false; dato5.Visible = false; dato6.Visible = false; dato7.Visible = false;
+            dato1.Visible = true; dato2.Visible = true; Resultado.Visible = true; button2.Visible = true; button3.Visible = true;
             Resultado.Text = TMulti(int.Parse(dato1.Text), int.Parse(dato2.Text));
         }
 
         private void ejercicio4ToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            lbcampo01.Text = "Divisor:"; lbcampo01.Visible = true; lbcampo02.Visible = true; lbcampo02.Text = "n terminos:";
             lbtitulo.Text = "Practico #01 Ejercicio 04";
             NumeroEjercicio = 4;
             NumeroPractico = 1;
-            dato3.Visible = false; dato4.Visible = false; dato5.Visible = false; dato6.Visible = false; dato7.Visible = false;
+            dato1.Visible = true; dato2.Visible = true; Resultado.Visible = true; button2.Visible = true; button3.Visible = true;
             Resultado.Text = Tdivisor(int.Parse(dato1.Text), int.Parse(dato2.Text));
         }
 
         private void ejercicio5ToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            lbcampo01.Visible = true;lbcampo02.Visible = true;lbcampo03.Visible = true;
+            lbcampo01.Text = "Vi:";lbcampo02.Text = "r:";lbcampo03.Text = "n terminos:";
             lbtitulo.Text = "Practico #01 Ejercicio 05";
             NumeroEjercicio = 5;
             NumeroPractico = 1;
-            dato4.Visible = false; dato5.Visible = false; dato6.Visible = false; dato7.Visible = false;
+            dato1.Visible = true; dato2.Visible = true;dato3.Visible = true; Resultado.Visible = true; button2.Visible = true; button3.Visible = true;
             Resultado.Text = Serie5(int.Parse(dato1.Text), int.Parse(dato2.Text), int.Parse(dato3.Text));
         }
 
         private void ejercicio6ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            dato3.Visible = false; dato4.Visible = false; dato5.Visible = false; dato6.Visible = false; dato7.Visible = false;
+            lbcampo01.Visible = true; lbcampo02.Visible = true;
+            lbcampo01.Text = "Vi:";lbcampo02.Text = "n terminos:";
+            lbtitulo.Text = "Practico #01 Ejercicio 06";
+            NumeroEjercicio = 6;
+            NumeroPractico = 1;
+            dato1.Visible = true; dato2.Visible = true; Resultado.Visible = true; button2.Visible = true; button3.Visible = true;
             Resultado.Text = Serie6(double.Parse(dato1.Text), int.Parse(dato2.Text));
         }
 
         private void ejercicio7ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            dato2.Visible = false; dato3.Visible = false; dato4.Visible = false; dato5.Visible = false; dato6.Visible = false; dato7.Visible = false;
+            lbcampo01.Visible = true;lbcampo01.Text = "n terminos:";
+            lbtitulo.Text = "Practico #01 Ejercicio 07";
+            NumeroEjercicio = 7;
+            NumeroPractico = 1;
+            dato1.Visible = true;Resultado.Visible = true; button2.Visible = true; button3.Visible = true;
             Resultado.Text = Serie7(int.Parse(dato1.Text));
         }
 
         private void ejercicio8ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            dato2.Visible = false; dato3.Visible = false; dato4.Visible = false; dato5.Visible = false; dato6.Visible = false; dato7.Visible = false;
+            lbcampo01.Visible = true; lbcampo01.Text = "n terminos:";
+            lbtitulo.Text = "Practico #01 Ejercicio 08";
+            NumeroEjercicio = 8;
+            NumeroPractico = 1;
+            dato1.Visible = true; Resultado.Visible = true; button2.Visible = true; button3.Visible = true;
             Resultado.Text = Serie8(int.Parse(dato1.Text));
         }
 
         private void ejercicio9ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            dato2.Visible = false; dato3.Visible = false; dato4.Visible = false; dato5.Visible = false; dato6.Visible = false; dato7.Visible = false;
+            lbcampo01.Visible = true; lbcampo01.Text = "n terminos:";
+            lbtitulo.Text = "Practico #01 Ejercicio 09";
+            NumeroEjercicio = 9;
+            NumeroPractico = 1;
+            dato1.Visible = true; Resultado.Visible = true; button2.Visible = true; button3.Visible = true;
             Resultado.Text = Serie9(int.Parse(dato1.Text));
         }
 
         private void ejercicio10ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            dato2.Visible = false; dato3.Visible = false; dato4.Visible = false; dato5.Visible = false; dato6.Visible = false; dato7.Visible = false;
+            lbcampo01.Visible = true; lbcampo01.Text = "n terminos:";
+            lbtitulo.Text = "Practico #01 Ejercicio 10";
+            NumeroEjercicio = 10;
+            NumeroPractico = 1;
+            dato1.Visible = true; Resultado.Visible = true; button2.Visible = true; button3.Visible = true;
             Resultado.Text = Serie10(int.Parse(dato1.Text));
         }
 
         private void ejercicio1ToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            dato2.Visible = false; dato3.Visible = false; dato4.Visible = false; dato5.Visible = false; dato6.Visible = false; dato7.Visible = false;
+            lbcampo01.Visible = true; lbcampo01.Text = "n terminos:";
+            lbtitulo.Text = "Practico #02 Ejercicio 01";
+            NumeroEjercicio = 1;
+            NumeroPractico = 2;
+            dato1.Visible = true; Resultado.Visible = true; button2.Visible = true; button3.Visible = true;
             Resultado.Text = Ejerci1(int.Parse(dato1.Text));
         }
 
         private void ejercicio2ToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            dato3.Visible = false; dato4.Visible = false; dato5.Visible = false; dato6.Visible = false; dato7.Visible = false;
+            lbcampo01.Visible = true; lbcampo02.Visible = true;
+            lbcampo01.Text = "Vi:"; lbcampo02.Text = "n terminos:";
+            lbtitulo.Text = "Practico #02 Ejercicio 02";
+            NumeroEjercicio = 2;
+            NumeroPractico = 2;
+            dato1.Visible = true; dato2.Visible = true; Resultado.Visible = true; button2.Visible = true; button3.Visible = true;
             Resultado.Text = Ejerci2(double.Parse(dato1.Text), int.Parse(dato2.Text));
         }
 
         private void ejercicio3ToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            dato6.Visible = false;dato7.Visible = false;
+            lbcampo01.Visible = true;lbcampo02.Visible = true;lbcampo03.Visible = true;lbcampo04.Visible = true;lbcampo05.Visible = true;
+            lbcampo01.Text = "Valor inicial:";lbcampo02.Text = "r:";lbcampo03.Text = "Vi multi:";lbcampo04.Text = "multi:";lbcampo05.Text = "n terminos:";
+            lbtitulo.Text = "Practico #02 Ejercicio 03";
+            NumeroEjercicio = 3;
+            NumeroPractico = 2;
+            dato1.Visible = true;dato2.Visible = true;dato3.Visible = true;dato4.Visible = true;dato5.Visible = true;Resultado.Visible = true; button2.Visible = true; button3.Visible = true;
             Resultado.Text = Ejerci3(double.Parse(dato1.Text), double.Parse(dato2.Text), double.Parse(dato3.Text), double.Parse(dato4.Text), int.Parse(dato5.Text));
         }
 
         private void ejercicio4ToolStripMenuItem1_Click(object sender, EventArgs e)
         {
+            lbcampo01.Visible = true; lbcampo02.Visible = true; lbcampo03.Visible = true; lbcampo04.Visible = true; lbcampo05.Visible = true;lbcampo06.Visible = true;lbcampo07.Visible = true;
+            lbcampo01.Text = "Vi multi:";lbcampo02.Text = "multi:";lbcampo03.Text = "Numerador:";lbcampo04.Text = "r numerdador:";lbcampo05.Text = "Denominador:";lbcampo06.Text = "r denominador:";lbcampo07.Text = "n terminos:";
+            lbtitulo.Text = "Practico #02 Ejercicio 04";
+            NumeroEjercicio = 04;
+            NumeroPractico = 2;
+            dato1.Visible = true;dato2.Visible = true;dato3.Visible = true;dato4.Visible = true;dato5.Visible = true;dato6.Visible = true;dato7.Visible = true;Resultado.Visible = true;
+            button2.Visible = true; button3.Visible = true;
             Resultado.Text = Ejerci4(double.Parse(dato1.Text), double.Parse(dato2.Text), int.Parse(dato3.Text), int.Parse(dato4.Text), double.Parse(dato5.Text), double.Parse(dato6.Text), int.Parse(dato7.Text));
         }
 
         private void ejercicio5ToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            dato4.Visible = false; dato5.Visible = false; dato6.Visible = false; dato7.Visible = false;
+            lbcampo01.Visible = true;lbcampo02.Visible = true;lbcampo03.Visible = true;
+            lbcampo01.Text = "Numerador:";lbcampo02.Text = "Denominador:";lbcampo03.Text = "n terminos:";
+            lbtitulo.Text = "Practico #02 Ejercicio 05";
+            NumeroEjercicio = 05;
+            NumeroPractico = 2;
+            dato1.Visible = true; dato2.Visible = true; dato3.Visible = true; Resultado.Visible = true; button2.Visible = true; button3.Visible = true;
             Resultado.Text = Ejerci5(int.Parse(dato1.Text), int.Parse(dato2.Text), int.Parse(dato3.Text));
         }
 
@@ -415,6 +469,30 @@ namespace Practico_de_Series_de_Mamani_Chura
                         Resultado.Text = Tdivisor(int.Parse(dato1.Text), int.Parse(dato2.Text));
                         break;
 
+                    case 5:
+                        Resultado.Text = Serie5(int.Parse(dato1.Text), int.Parse(dato2.Text), int.Parse(dato3.Text));
+                        break;
+
+                    case 6:
+                        Resultado.Text = Serie6(double.Parse(dato1.Text), int.Parse(dato2.Text));
+                        break;
+
+                    case 7:
+                        Resultado.Text = Serie7(int.Parse(dato1.Text));
+                        break;
+
+                    case 8:
+                        Resultado.Text = Serie8(int.Parse(dato1.Text));
+                        break;
+
+                    case 9:
+                        Resultado.Text = Serie9(int.Parse(dato1.Text));
+                        break;
+
+                    case 10:
+                        Resultado.Text = Serie10(int.Parse(dato1.Text));
+                        break;
+
                     default:
                         Console.WriteLine("Opción no válida");
                         break;
@@ -428,19 +506,23 @@ namespace Practico_de_Series_de_Mamani_Chura
                 switch (NumeroEjercicio)
                 {
                     case 1:
-                        Resultado.Text = tSuma(int.Parse(dato1.Text), int.Parse(dato2.Text));
+                        Resultado.Text = Ejerci1(int.Parse(dato1.Text));
                         break;
 
                     case 2:
-                        Resultado.Text = Tresta(int.Parse(dato1.Text), int.Parse(dato2.Text));
+                        Resultado.Text = Ejerci2(double.Parse(dato1.Text), int.Parse(dato2.Text));
                         break;
 
                     case 3:
-                        Resultado.Text = TMulti(int.Parse(dato1.Text), int.Parse(dato2.Text));
+                        Resultado.Text = Ejerci3(double.Parse(dato1.Text), double.Parse(dato2.Text), double.Parse(dato3.Text), double.Parse(dato4.Text), int.Parse(dato5.Text));
                         break;
 
                     case 4:
-                        Resultado.Text = Tdivisor(int.Parse(dato1.Text), int.Parse(dato2.Text));
+                        Resultado.Text = Ejerci4(double.Parse(dato1.Text), double.Parse(dato2.Text), int.Parse(dato3.Text), int.Parse(dato4.Text), double.Parse(dato5.Text), double.Parse(dato6.Text), int.Parse(dato7.Text));
+                        break;
+
+                    case 5:
+                        Resultado.Text = Ejerci5(int.Parse(dato1.Text), int.Parse(dato2.Text), int.Parse(dato3.Text));
                         break;
 
                     default:
@@ -453,5 +535,28 @@ namespace Practico_de_Series_de_Mamani_Chura
 
         }
 
+        private void pRACTICO2SeriresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            dato1.Visible = false; Resultado.Visible = false;
+            dato2.Visible = false; dato3.Visible = false; dato4.Visible = false; dato5.Visible = false; dato6.Visible = false; dato7.Visible = false;
+            lbtitulo.Text = "Practico #02 de Series";
+            lbcampo01.Visible = false; lbcampo02.Visible = false; lbcampo03.Visible = false;
+            lbcampo04.Visible = false; lbcampo05.Visible = false; lbcampo06.Visible = false; lbcampo07.Visible = false; button2.Visible = false; button3.Visible = false;
+        }
+
+        private void pRACTICO1SeriesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            dato1.Visible = false; Resultado.Visible = false;
+            dato2.Visible = false; dato3.Visible = false; dato4.Visible = false; dato5.Visible = false; dato6.Visible = false; dato7.Visible = false;
+            lbtitulo.Text = "Practico #01 de Series";
+            lbcampo01.Visible = false; lbcampo02.Visible = false; lbcampo03.Visible = false;
+            lbcampo04.Visible = false; lbcampo05.Visible = false; lbcampo06.Visible = false; lbcampo07.Visible = false; button2.Visible = false; button3.Visible = false;
+        }
+
+        private void lbcampo06_Click(object sender, EventArgs e)
+        {
+            //000
+        }
     }
 }
