@@ -394,6 +394,64 @@ namespace Practico_de_Series_de_Mamani_Chura
         private void button3_Click(object sender, EventArgs e)
         {
 
+            if (NumeroPractico == 1){
+              
+
+                switch (NumeroEjercicio)
+                {
+                    case 1:
+                        Resultado.Text = tSuma(int.Parse(dato1.Text), int.Parse(dato2.Text));
+                        break;
+
+                    case 2:
+                        Resultado.Text = Tresta(int.Parse(dato1.Text), int.Parse(dato2.Text));
+                        break;
+
+                    case 3:
+                        Resultado.Text = TMulti(int.Parse(dato1.Text), int.Parse(dato2.Text));
+                        break;
+
+                    case 4:
+                        Resultado.Text = Tdivisor(int.Parse(dato1.Text), int.Parse(dato2.Text));
+                        break;
+
+                    default:
+                        Console.WriteLine("Opción no válida");
+                        break;
+                }
+
+            }
+            if (NumeroPractico == 2)
+            {
+
+
+                switch (NumeroEjercicio)
+                {
+                    case 1:
+                        Resultado.Text = tSuma(int.Parse(dato1.Text), int.Parse(dato2.Text));
+                        break;
+
+                    case 2:
+                        Resultado.Text = Tresta(int.Parse(dato1.Text), int.Parse(dato2.Text));
+                        break;
+
+                    case 3:
+                        Resultado.Text = TMulti(int.Parse(dato1.Text), int.Parse(dato2.Text));
+                        break;
+
+                    case 4:
+                        Resultado.Text = Tdivisor(int.Parse(dato1.Text), int.Parse(dato2.Text));
+                        break;
+
+                    default:
+                        Console.WriteLine("Opción no válida");
+                        break;
+                }
+
+            }
+
+
         }
+
     }
 }
