@@ -228,7 +228,7 @@
             // dato1
             // 
             this.dato1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dato1.Location = new System.Drawing.Point(159, 121);
+            this.dato1.Location = new System.Drawing.Point(126, 135);
             this.dato1.Name = "dato1";
             this.dato1.Size = new System.Drawing.Size(100, 26);
             this.dato1.TabIndex = 2;
@@ -236,7 +236,7 @@
             // dato2
             // 
             this.dato2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dato2.Location = new System.Drawing.Point(304, 121);
+            this.dato2.Location = new System.Drawing.Point(279, 135);
             this.dato2.Name = "dato2";
             this.dato2.Size = new System.Drawing.Size(100, 26);
             this.dato2.TabIndex = 3;
@@ -244,23 +244,23 @@
             // dato3
             // 
             this.dato3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dato3.Location = new System.Drawing.Point(454, 121);
+            this.dato3.Location = new System.Drawing.Point(432, 135);
             this.dato3.Name = "dato3";
             this.dato3.Size = new System.Drawing.Size(100, 26);
             this.dato3.TabIndex = 4;
             // 
             // Resultado
             // 
-            this.Resultado.Location = new System.Drawing.Point(159, 169);
+            this.Resultado.Location = new System.Drawing.Point(126, 209);
             this.Resultado.Multiline = true;
             this.Resultado.Name = "Resultado";
-            this.Resultado.Size = new System.Drawing.Size(345, 200);
+            this.Resultado.Size = new System.Drawing.Size(387, 199);
             this.Resultado.TabIndex = 5;
             // 
             // dato5
             // 
             this.dato5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dato5.Location = new System.Drawing.Point(742, 121);
+            this.dato5.Location = new System.Drawing.Point(715, 135);
             this.dato5.Name = "dato5";
             this.dato5.Size = new System.Drawing.Size(100, 26);
             this.dato5.TabIndex = 6;
@@ -268,7 +268,7 @@
             // dato4
             // 
             this.dato4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dato4.Location = new System.Drawing.Point(600, 121);
+            this.dato4.Location = new System.Drawing.Point(578, 135);
             this.dato4.Name = "dato4";
             this.dato4.Size = new System.Drawing.Size(100, 26);
             this.dato4.TabIndex = 7;
@@ -276,7 +276,7 @@
             // dato6
             // 
             this.dato6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dato6.Location = new System.Drawing.Point(891, 121);
+            this.dato6.Location = new System.Drawing.Point(853, 135);
             this.dato6.Name = "dato6";
             this.dato6.Size = new System.Drawing.Size(100, 26);
             this.dato6.TabIndex = 8;
@@ -284,7 +284,7 @@
             // dato7
             // 
             this.dato7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dato7.Location = new System.Drawing.Point(1040, 121);
+            this.dato7.Location = new System.Drawing.Point(1014, 135);
             this.dato7.Name = "dato7";
             this.dato7.Size = new System.Drawing.Size(100, 26);
             this.dato7.TabIndex = 9;
@@ -292,8 +292,9 @@
             // lbcampo01
             // 
             this.lbcampo01.AutoSize = true;
+            this.lbcampo01.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.lbcampo01.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbcampo01.Location = new System.Drawing.Point(156, 88);
+            this.lbcampo01.Location = new System.Drawing.Point(132, 88);
             this.lbcampo01.Name = "lbcampo01";
             this.lbcampo01.Size = new System.Drawing.Size(57, 20);
             this.lbcampo01.TabIndex = 10;
@@ -306,7 +307,7 @@
             this.button2.ForeColor = System.Drawing.SystemColors.Control;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(663, 193);
+            this.button2.Location = new System.Drawing.Point(627, 224);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(162, 47);
             this.button2.TabIndex = 11;
@@ -320,7 +321,7 @@
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(663, 273);
+            this.button3.Location = new System.Drawing.Point(627, 300);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(162, 44);
             this.button3.TabIndex = 12;
@@ -344,7 +345,7 @@
             // 
             this.lbcampo02.AutoSize = true;
             this.lbcampo02.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbcampo02.Location = new System.Drawing.Point(300, 88);
+            this.lbcampo02.Location = new System.Drawing.Point(289, 88);
             this.lbcampo02.Name = "lbcampo02";
             this.lbcampo02.Size = new System.Drawing.Size(57, 20);
             this.lbcampo02.TabIndex = 14;
@@ -354,7 +355,7 @@
             // 
             this.lbcampo03.AutoSize = true;
             this.lbcampo03.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbcampo03.Location = new System.Drawing.Point(450, 88);
+            this.lbcampo03.Location = new System.Drawing.Point(440, 88);
             this.lbcampo03.Name = "lbcampo03";
             this.lbcampo03.Size = new System.Drawing.Size(57, 20);
             this.lbcampo03.TabIndex = 15;
@@ -364,7 +365,7 @@
             // 
             this.lbcampo04.AutoSize = true;
             this.lbcampo04.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbcampo04.Location = new System.Drawing.Point(597, 88);
+            this.lbcampo04.Location = new System.Drawing.Point(586, 88);
             this.lbcampo04.Name = "lbcampo04";
             this.lbcampo04.Size = new System.Drawing.Size(57, 20);
             this.lbcampo04.TabIndex = 16;
@@ -374,7 +375,7 @@
             // 
             this.lbcampo05.AutoSize = true;
             this.lbcampo05.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbcampo05.Location = new System.Drawing.Point(739, 88);
+            this.lbcampo05.Location = new System.Drawing.Point(721, 88);
             this.lbcampo05.Name = "lbcampo05";
             this.lbcampo05.Size = new System.Drawing.Size(57, 20);
             this.lbcampo05.TabIndex = 17;
@@ -384,7 +385,7 @@
             // 
             this.lbcampo06.AutoSize = true;
             this.lbcampo06.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbcampo06.Location = new System.Drawing.Point(887, 88);
+            this.lbcampo06.Location = new System.Drawing.Point(861, 88);
             this.lbcampo06.Name = "lbcampo06";
             this.lbcampo06.Size = new System.Drawing.Size(57, 20);
             this.lbcampo06.TabIndex = 18;
@@ -395,7 +396,7 @@
             // 
             this.lbcampo07.AutoSize = true;
             this.lbcampo07.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbcampo07.Location = new System.Drawing.Point(1036, 88);
+            this.lbcampo07.Location = new System.Drawing.Point(1022, 88);
             this.lbcampo07.Name = "lbcampo07";
             this.lbcampo07.Size = new System.Drawing.Size(57, 20);
             this.lbcampo07.TabIndex = 19;
@@ -404,6 +405,7 @@
             // Form1
             // 
             this.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1274, 540);
             this.Controls.Add(this.lbcampo07);
             this.Controls.Add(this.lbcampo06);
