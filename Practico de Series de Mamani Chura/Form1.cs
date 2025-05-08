@@ -12,9 +12,22 @@ namespace Practico_de_Series_de_Mamani_Chura
 {
     public partial class Form1 : Form
     {
+        int NumeroEjercicio = 0;
+        int NumeroPractico = 0;
         public Form1()
         {
             InitializeComponent();
+            limpiar();
+            dato1.Visible = false;Resultado.Visible = false;
+           dato2.Visible = false; dato3.Visible = false; dato4.Visible = false; dato5.Visible = false; dato6.Visible = false; dato7.Visible = false;
+            lbtitulo.Text = "";
+
+        }
+        void limpiar()
+        {
+            dato1.Text = "0"; dato2.Text = "0"; dato3.Text = "0";
+            dato4.Text = "0"; dato5.Text = "0"; dato6.Text = "0"; dato7.Text = "0";
+            Resultado.Text = "";
         }
         // Tabla de Suma del practico 1//
         public string tSuma(int sm, int n)
@@ -240,7 +253,7 @@ namespace Practico_de_Series_de_Mamani_Chura
                 den += paso;
                 if (contador < n && num >= 1)
                 {
-                    s += "+";
+                    s += " + ";
                 }
             }
             return s;
@@ -269,30 +282,46 @@ namespace Practico_de_Series_de_Mamani_Chura
 
         private void ejercicio1ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            dato3.Visible = false;dato4.Visible = false;dato5.Visible = false;dato6.Visible = false;dato7.Visible = false;
+            lbcampo01.Text = "Suma";
+            lbtitulo.Text = "Practico #01 Ejercicio 01";
+            NumeroEjercicio = 1;
+            NumeroPractico = 1;
+            dato1.Visible = true;dato2.Visible = true;Resultado.Visible = true;
             Resultado.Text = tSuma(int.Parse(dato1.Text), int.Parse(dato2.Text));
         }
 
         private void ejercicio2ToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            lbtitulo.Text = "Practico #01 Ejercicio 02";
+            NumeroEjercicio = 2;
+            NumeroPractico = 1;
             dato3.Visible = false; dato4.Visible = false; dato5.Visible = false; dato6.Visible = false; dato7.Visible = false;
             Resultado.Text = Tresta(int.Parse(dato1.Text), int.Parse(dato2.Text));
         }
 
         private void ejercicio3ToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            lbtitulo.Text = "Practico #01 Ejercicio 03";
+            NumeroEjercicio = 3;
+            NumeroPractico = 1;
             dato3.Visible = false; dato4.Visible = false; dato5.Visible = false; dato6.Visible = false; dato7.Visible = false;
             Resultado.Text = TMulti(int.Parse(dato1.Text), int.Parse(dato2.Text));
         }
 
         private void ejercicio4ToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            lbtitulo.Text = "Practico #01 Ejercicio 04";
+            NumeroEjercicio = 4;
+            NumeroPractico = 1;
             dato3.Visible = false; dato4.Visible = false; dato5.Visible = false; dato6.Visible = false; dato7.Visible = false;
             Resultado.Text = Tdivisor(int.Parse(dato1.Text), int.Parse(dato2.Text));
         }
 
         private void ejercicio5ToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            lbtitulo.Text = "Practico #01 Ejercicio 05";
+            NumeroEjercicio = 5;
+            NumeroPractico = 1;
             dato4.Visible = false; dato5.Visible = false; dato6.Visible = false; dato7.Visible = false;
             Resultado.Text = Serie5(int.Parse(dato1.Text), int.Parse(dato2.Text), int.Parse(dato3.Text));
         }
@@ -354,6 +383,17 @@ namespace Practico_de_Series_de_Mamani_Chura
         {
             dato4.Visible = false; dato5.Visible = false; dato6.Visible = false; dato7.Visible = false;
             Resultado.Text = Ejerci5(int.Parse(dato1.Text), int.Parse(dato2.Text), int.Parse(dato3.Text));
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            limpiar();
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

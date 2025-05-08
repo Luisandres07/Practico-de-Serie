@@ -56,6 +56,10 @@
             this.dato4 = new System.Windows.Forms.TextBox();
             this.dato6 = new System.Windows.Forms.TextBox();
             this.dato7 = new System.Windows.Forms.TextBox();
+            this.lbcampo01 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.lbtitulo = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -266,9 +270,53 @@
             this.dato7.Size = new System.Drawing.Size(100, 20);
             this.dato7.TabIndex = 9;
             // 
+            // lbcampo01
+            // 
+            this.lbcampo01.AutoSize = true;
+            this.lbcampo01.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbcampo01.Location = new System.Drawing.Point(205, 53);
+            this.lbcampo01.Name = "lbcampo01";
+            this.lbcampo01.Size = new System.Drawing.Size(45, 16);
+            this.lbcampo01.TabIndex = 10;
+            this.lbcampo01.Text = "label1";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(829, 222);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 11;
+            this.button2.Text = "Limpiar";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(829, 269);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 12;
+            this.button3.Text = "Calcular";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // lbtitulo
+            // 
+            this.lbtitulo.AutoSize = true;
+            this.lbtitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbtitulo.Location = new System.Drawing.Point(543, 38);
+            this.lbtitulo.Name = "lbtitulo";
+            this.lbtitulo.Size = new System.Drawing.Size(45, 16);
+            this.lbtitulo.TabIndex = 13;
+            this.lbtitulo.Text = "label1";
+            // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(1274, 540);
+            this.Controls.Add(this.lbtitulo);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.lbcampo01);
             this.Controls.Add(this.dato7);
             this.Controls.Add(this.dato6);
             this.Controls.Add(this.dato4);
@@ -319,6 +367,10 @@
         private System.Windows.Forms.TextBox dato4;
         private System.Windows.Forms.TextBox dato6;
         private System.Windows.Forms.TextBox dato7;
+        private System.Windows.Forms.Label lbcampo01;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label lbtitulo;
     }
 }
 
