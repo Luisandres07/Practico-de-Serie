@@ -229,10 +229,33 @@ namespace Practico_de_Series_de_Mamani_Chura
             f = t;
             return f;
         }
+        static string GenerarSerie(int numerador, int denominador, int n)
+        {
+            int paso = 1;
+            int contador = 0;
+            string resultado = "F = ";
+
+            while (contador < n && numerador >= 1)
+            {
+                resultado += $"√({numerador}/{denominador})";
+                contador++;
+                paso++;
+                numerador -= paso;
+                denominador += paso;
+
+                if (contador < n && numerador >= 1)
+                {
+                    resultado += " + ";
+                }
+            }
+
+            return resultado;
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            textBox1.Text = "F= " + Ejerci4(10, 10, 2, 2, 1.7, 0.2, 5);
+            //textBox1.Text = "F= " + Ejerci4(10, 10, 2, 2, 1.7, 0.2, 5);
+            textBox1.Text = "F= " + GenerarSerie(99,2,5);
         }
         // Ejercicio 5
         //Avance Ejercicio05

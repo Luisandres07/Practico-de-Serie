@@ -16,4 +16,34 @@ console.log("-----------------------------------------------------")
 }
 
 
-console.log("F= "+ejerci4(10,10,2,2,1.7,0.2,5))
+function generarSerie(numerador, denominador, n) {
+    let resultado = "F = ";
+    let paso = 1;
+    let contador = 0;
+  
+    while (contador < n && numerador >= 1) {
+      resultado += `√(${numerador}/${denominador})`;
+  
+   
+      contador++;
+ 
+      paso++;
+      numerador -= paso;
+      denominador += paso;
+       
+      if (contador < n && numerador >= 1) {
+        resultado += " + ";
+      }
+    
+    }
+  
+    return resultado;
+  }
+  
+  // Ejemplo de uso
+  console.log(generarSerie(99, 2,4000));
+  
+  
+  
+
+//console.log("F= "+ejerci4(10,10,2,2,1.7,0.2,5))
