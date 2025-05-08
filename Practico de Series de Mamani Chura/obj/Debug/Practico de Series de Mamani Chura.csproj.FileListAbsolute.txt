@@ -1,1 +1,10 @@
 C:\Users\Luis Andres\Documents\Visual Studio 2015\Projects\Practico de Series de Mamani Chura\Practico de Series de Mamani Chura\bin\Debug\Practico de Series de Mamani Chura.exe.config
+C:\GIT\Practico-de-Serie\Practico de Series de Mamani Chura\bin\Debug\Practico de Series de Mamani Chura.exe.config
+C:\GIT\Practico-de-Serie\Practico de Series de Mamani Chura\bin\Debug\Practico de Series de Mamani Chura.exe
+C:\GIT\Practico-de-Serie\Practico de Series de Mamani Chura\bin\Debug\Practico de Series de Mamani Chura.pdb
+C:\GIT\Practico-de-Serie\Practico de Series de Mamani Chura\obj\Debug\Practico de Series de Mamani Chura.csprojResolveAssemblyReference.cache
+C:\GIT\Practico-de-Serie\Practico de Series de Mamani Chura\obj\Debug\Practico_de_Series_de_Mamani_Chura.Form1.resources
+C:\GIT\Practico-de-Serie\Practico de Series de Mamani Chura\obj\Debug\Practico_de_Series_de_Mamani_Chura.Properties.Resources.resources
+C:\GIT\Practico-de-Serie\Practico de Series de Mamani Chura\obj\Debug\Practico de Series de Mamani Chura.csproj.GenerateResource.Cache
+C:\GIT\Practico-de-Serie\Practico de Series de Mamani Chura\obj\Debug\Practico de Series de Mamani Chura.exe
+C:\GIT\Practico-de-Serie\Practico de Series de Mamani Chura\obj\Debug\Practico de Series de Mamani Chura.pdb

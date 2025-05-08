@@ -214,7 +214,7 @@ namespace Practico_de_Series_de_Mamani_Chura
             return f;
         }
         // Ejercicio 4
-        public string Ejerci4(double vim, double m, int vi, int r, int vi1,int r1, int n)
+        public string Ejerci4(double vim, double m, int vi, int r, double vi1,double r1, int n)
         {
             int i;
             double a, b, am;
@@ -223,9 +223,16 @@ namespace Practico_de_Series_de_Mamani_Chura
             {
                 am = am * m;a = vi + (i - 1) * r;b = vi1 + (i - 1) * r1;
                 t = t + "ln(" + am +")+" + a + "/" + b + "+";
-                f = f + t;
+             
+
             }
+            f = t;
             return f;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "F= " + Ejerci4(10, 10, 2, 2, 1.7, 0.2, 5);
         }
         // Ejercicio 5
         //Avance Ejercicio05
