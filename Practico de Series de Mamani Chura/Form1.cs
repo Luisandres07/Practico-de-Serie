@@ -63,28 +63,24 @@ namespace Practico_de_Series_de_Mamani_Chura
         public string Tdivisor(int div, int n)
         {
             int i;
-            double t;
-            string s;
-            s = "";
-            for (i = 12; i >= n; i--)
+            string s = "";
+            for (i =1; i <= n; i++)
             {
-                t = i / div;
-                s = s + i + "/" + div + "=" + t + "\x000d" + "\x000a";
+                s = s + (div * i).ToString() + "/" + div.ToString() + "=" + ((div * i) / div).ToString() + "\r\n";
             }
             return s;
         }
         // Ejercicio 5 del practico 1 
-        public string Serie5(double vi, double r, int n)
+        public string Serie5(int vi,int r,int n)
         {
-            int i;
-            double t;
+            int i, aux;
             string s;
             s = "";
             for (i = 1; i <= n; i++)
-            {
-                t = vi + (i - 1) * r;
-                s = s + t + "\x0009";
-            }
+                for (aux = 1; aux <= 2; aux++)
+                {
+                    s = s + (vi + (i - i) * r).ToString() + "";
+                }
             return s;
         }
         // Ejercicio 6 del practico 1 
@@ -229,35 +225,135 @@ namespace Practico_de_Series_de_Mamani_Chura
             f = t;
             return f;
         }
-        static string GenerarSerie(int numerador, int denominador, int n)
+        // Ejercicio 5 
+        public string Ejerci5(int num, int den,int n)
         {
             int paso = 1;
             int contador = 0;
-            string resultado = "F = ";
-
-            while (contador < n && numerador >= 1)
+            String s = "F=";
+            while(contador<n&&num >= 1)
             {
-                resultado += $"√({numerador}/{denominador})";
+                s = s + $"√({num}/{ den})";
                 contador++;
                 paso++;
-                numerador -= paso;
-                denominador += paso;
-
-                if (contador < n && numerador >= 1)
+                num -= paso;
+                den += paso;
+                if (contador < n && num >= 1)
                 {
-                    resultado += " + ";
+                    s += "+";
                 }
             }
-
-            return resultado;
+            return s;
         }
-
-        private void button1_Click(object sender, EventArgs e)
+        // Ejercicio 6
+        public double Factorial(int n)
         {
-            //textBox1.Text = "F= " + Ejerci4(10, 10, 2, 2, 1.7, 0.2, 5);
-            textBox1.Text = "F= " + GenerarSerie(99,2,5);
+            double fac;
+            int i;
+            if (n != 0)
+            {
+                fac = 1;
+                for (i = Math.Abs(n); i >= 1; i--)
+                {
+                    fac = fac * i;
+                    if (n < 0)
+                        fac = -fac;
+                }
+            }
+            else
+            {
+                fac = 1;
+            }
+            return fac;
         }
-        // Ejercicio 5
-        //Avance Ejercicio05
+
+        private void ejercicio1ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            dato3.Visible = false;dato4.Visible = false;dato5.Visible = false;dato6.Visible = false;dato7.Visible = false;
+            Resultado.Text = tSuma(int.Parse(dato1.Text), int.Parse(dato2.Text));
+        }
+
+        private void ejercicio2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            dato3.Visible = false; dato4.Visible = false; dato5.Visible = false; dato6.Visible = false; dato7.Visible = false;
+            Resultado.Text = Tresta(int.Parse(dato1.Text), int.Parse(dato2.Text));
+        }
+
+        private void ejercicio3ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            dato3.Visible = false; dato4.Visible = false; dato5.Visible = false; dato6.Visible = false; dato7.Visible = false;
+            Resultado.Text = TMulti(int.Parse(dato1.Text), int.Parse(dato2.Text));
+        }
+
+        private void ejercicio4ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            dato3.Visible = false; dato4.Visible = false; dato5.Visible = false; dato6.Visible = false; dato7.Visible = false;
+            Resultado.Text = Tdivisor(int.Parse(dato1.Text), int.Parse(dato2.Text));
+        }
+
+        private void ejercicio5ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            dato4.Visible = false; dato5.Visible = false; dato6.Visible = false; dato7.Visible = false;
+            Resultado.Text = Serie5(int.Parse(dato1.Text), int.Parse(dato2.Text), int.Parse(dato3.Text));
+        }
+
+        private void ejercicio6ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            dato3.Visible = false; dato4.Visible = false; dato5.Visible = false; dato6.Visible = false; dato7.Visible = false;
+            Resultado.Text = Serie6(double.Parse(dato1.Text), int.Parse(dato2.Text));
+        }
+
+        private void ejercicio7ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            dato2.Visible = false; dato3.Visible = false; dato4.Visible = false; dato5.Visible = false; dato6.Visible = false; dato7.Visible = false;
+            Resultado.Text = Serie7(int.Parse(dato1.Text));
+        }
+
+        private void ejercicio8ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            dato2.Visible = false; dato3.Visible = false; dato4.Visible = false; dato5.Visible = false; dato6.Visible = false; dato7.Visible = false;
+            Resultado.Text = Serie8(int.Parse(dato1.Text));
+        }
+
+        private void ejercicio9ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            dato2.Visible = false; dato3.Visible = false; dato4.Visible = false; dato5.Visible = false; dato6.Visible = false; dato7.Visible = false;
+            Resultado.Text = Serie9(int.Parse(dato1.Text));
+        }
+
+        private void ejercicio10ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            dato2.Visible = false; dato3.Visible = false; dato4.Visible = false; dato5.Visible = false; dato6.Visible = false; dato7.Visible = false;
+            Resultado.Text = Serie10(int.Parse(dato1.Text));
+        }
+
+        private void ejercicio1ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            dato2.Visible = false; dato3.Visible = false; dato4.Visible = false; dato5.Visible = false; dato6.Visible = false; dato7.Visible = false;
+            Resultado.Text = Ejerci1(int.Parse(dato1.Text));
+        }
+
+        private void ejercicio2ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            dato3.Visible = false; dato4.Visible = false; dato5.Visible = false; dato6.Visible = false; dato7.Visible = false;
+            Resultado.Text = Ejerci2(double.Parse(dato1.Text), int.Parse(dato2.Text));
+        }
+
+        private void ejercicio3ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            dato6.Visible = false;dato7.Visible = false;
+            Resultado.Text = Ejerci3(double.Parse(dato1.Text), double.Parse(dato2.Text), double.Parse(dato3.Text), double.Parse(dato4.Text), int.Parse(dato5.Text));
+        }
+
+        private void ejercicio4ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Resultado.Text = Ejerci4(double.Parse(dato1.Text), double.Parse(dato2.Text), int.Parse(dato3.Text), int.Parse(dato4.Text), double.Parse(dato5.Text), double.Parse(dato6.Text), int.Parse(dato7.Text));
+        }
+
+        private void ejercicio5ToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            dato4.Visible = false; dato5.Visible = false; dato6.Visible = false; dato7.Visible = false;
+            Resultado.Text = Ejerci5(int.Parse(dato1.Text), int.Parse(dato2.Text), int.Parse(dato3.Text));
+        }
     }
 }
